@@ -15,6 +15,21 @@
         <li class="adventures__element"><img src="" alt="yacht" class="adventures__img"></li>
     </ul>
     <h2 class="adventures__title">Choose your dream yacht and sail away into the sunset</h2>
-    <button type="button" class="adventures__btn">Yacht rental</button>
+    <button type="button" class="adventures__btn" data-modal-open>Yacht rental</button>
 </div>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__btn" data-modal-close>
+        <svg class="modal__close">
+          <use href=""></use>
+        </svg>
+      </button>
+      <img src="" alt="white yacht" class="modal__img">
+      <h2 class="modal__title">Thank you</h2>
+      <p class="modal__text">
+        Thank you for choosing Yacht Adventures. Your booking details have been received, and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.
+      </p>
+    </div>
+  </div>
+  </div>
 </section>
