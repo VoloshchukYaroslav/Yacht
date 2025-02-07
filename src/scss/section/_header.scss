@@ -1,6 +1,6 @@
 .header {
   padding: 24px 20px 24px 20px;
-  background: #11131f;
+  background: $main-background;
   border-bottom: 1px solid rgba(246, 245, 239, 0.2);
 
   @media screen and (min-width: 768px) {
