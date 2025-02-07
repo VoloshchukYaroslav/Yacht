@@ -1,1 +1,32 @@
- 
+.adventures{
+background-color: aqua;
+
+    &__caption{
+        font-family: "DM Sans";
+font-size: 32px;
+font-style: italic;
+font-weight: 500;
+line-height: 120%; /* 38.4px */
+letter-spacing: -1.44px;
+    }
+
+    &__item{
+        color: #F6F5EF;
+        font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+letter-spacing: -0.32px;
+    }
+
+    &__title{
+        color: #F6F5EF;
+        font-family: "DM Sans";
+font-size: 100px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%; /* 110px */
+letter-spacing: -4.5px;
+    }
+} 
