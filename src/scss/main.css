@@ -134,11 +134,17 @@ body {
   font-weight: 400;
   line-height: 140%; /* 19.6px */
   letter-spacing: -0.28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 32px;
 }
 @media screen and (min-width: 768px) {
   .adventures__item {
     font-size: 16px;
     letter-spacing: -0.32px;
+    margin-bottom: 64px;
+    gap: 32px;
   }
 }
 .adventures__title {
@@ -149,6 +155,7 @@ body {
   font-weight: 500;
   line-height: 110%; /* 39.6px */
   letter-spacing: -1.62px;
+  margin-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
   .adventures__title {
