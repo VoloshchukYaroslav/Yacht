@@ -80,6 +80,7 @@ body {
 }
 
 .adventures {
+  background-color: #11131F;
   padding-top: 80px;
   padding-bottom: 98px;
 }
@@ -166,6 +167,7 @@ body {
   text-align: center;
   border-radius: 60px;
   border: 1px solid #f6f5ef;
+  padding: 14px 28px;
 }
 @media screen and (min-width: 768px) {
   .adventures__btn {
