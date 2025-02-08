@@ -1,32 +1,95 @@
 .adventures{
-background-color: aqua;
+padding-top: 80px;
+padding-bottom: 98px;
+
+
+@media screen and (min-width: 768px){
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1200px){
+    padding-top: 164px;
+    padding-bottom: 221px;
+}
+
 
     &__caption{
+        color: $text-color;
         font-family: "DM Sans";
-font-size: 32px;
+font-size: 24px;
 font-style: italic;
 font-weight: 500;
-line-height: 120%; /* 38.4px */
-letter-spacing: -1.44px;
+line-height: 120%; /* 28.8px */
+letter-spacing: -1.08px;
+
+@media screen and (min-width: 768px){
+    font-size: 32px;
+    letter-spacing: -1.44px;
+}
     }
 
-    &__item{
-        color: #F6F5EF;
+&__color{
+   color: $span-color;
         font-family: "DM Sans";
-font-size: 16px;
+font-size: 24px;
+font-style: italic;
+font-weight: 500;
+line-height: 120%; /* 28.8px */
+letter-spacing: -1.08px;
+
+@media screen and (min-width: 768px){
+    font-size: 32px;
+    letter-spacing: -1.44px;
+}
+}
+
+
+    &__item{
+        color: $text-color;
+        font-family: "DM Sans";
+font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 140%; /* 22.4px */
-letter-spacing: -0.32px;
+line-height: 140%; /* 19.6px */
+letter-spacing: -0.28px;
+
+@media screen and (min-width: 768px){
+    font-size: 16px;
+    letter-spacing: -0.32px;
+}
     }
 
     &__title{
-        color: #F6F5EF;
+        color: $text-color;
         font-family: "DM Sans";
-font-size: 100px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 39.6px */
+        letter-spacing: -1.62px;
+
+        @media screen and (min-width: 768px){
+            font-size: 100px;
+            letter-spacing: -4.5px;
+        }
+    }
+
+    &__btn{
+        color: $text-color;
+        font-family: "DM Sans";
+font-size: 14px;
 font-style: normal;
-font-weight: 500;
-line-height: 110%; /* 110px */
-letter-spacing: -4.5px;
+font-weight: 700;
+line-height: 110%; /* 15.4px */
+letter-spacing: -0.63px;
+text-align: center;
+border-radius: 60px;
+border: 1px solid $text-color;
+
+@media screen and (min-width: 768px){
+    font-size: 18px;
+    letter-spacing: -0.81px;
+}
     }
 } 
