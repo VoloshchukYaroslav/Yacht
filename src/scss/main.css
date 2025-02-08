@@ -138,6 +138,7 @@ body {
   flex-direction: column;
   gap: 14px;
   margin-top: 32px;
+  width: 161px;
 }
 @media screen and (min-width: 768px) {
   .adventures__item {
@@ -145,6 +146,7 @@ body {
     letter-spacing: -0.32px;
     margin-bottom: 64px;
     gap: 32px;
+    width: 185px;
   }
 }
 .adventures__title {
@@ -175,6 +177,7 @@ body {
   border-radius: 60px;
   border: 1px solid #f6f5ef;
   padding: 14px 28px;
+  background: transparent;
 }
 @media screen and (min-width: 768px) {
   .adventures__btn {
