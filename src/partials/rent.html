@@ -1,25 +1,41 @@
- <section class="rent">
-        <div class="container">
-    <h1 class="rent__title">Rent a yacht now</h1>
-    <img src="" alt="yacht_sea" class="rent__img">
-    <ul class="rent__list">
+<section class="rent">
+    <div class="container">
+      <h1 class="rent__title">Rent a yacht now</h1>
+      <img src="" alt="Yacht at sea" class="rent__img">
+      <ul class="rent__list">
         <li class="rent__item">
-            <input type="text" class="rent__input" placeholder="Full Name">
+          <input type="text" class="rent__input" placeholder="Full Name">
         </li>
         <li class="rent__item">
-            <input type="text" class="rent__input" placeholder="Email">
+          <input type="email" class="rent__input" placeholder="Email">
         </li>
         <li class="rent__item">
-            <input type="text" class="rent__input" placeholder="Phone number">
+          <input type="tel" class="rent__input" placeholder="Phone number">
         </li>
         <li class="rent__item">
-            <input type="text" class="rent__input" placeholder="Comment">
+          <input type="text" class="rent__input" placeholder="Comment">
         </li>
-    </ul>
-    <a href="" class="rent__link">Send
+      </ul>
+      <button type="button" class="rent__btn" data-modal-open>
         <svg class="rent__icon">
           <use href=""></use>
         </svg>
-      </a>
-</div>
-</section>
+        Send
+      </button>
+  
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal__btn" data-modal-close>
+            <svg class="modal__close">
+              <use href=""></use>
+            </svg>
+          </button>
+          <img src="" alt="White yacht" class="modal__img">
+          <h2 class="modal__title">Thank you</h2>
+          <p class="modal__text">
+            Thank you for choosing Yacht Adventures. Your booking details have been received, and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
