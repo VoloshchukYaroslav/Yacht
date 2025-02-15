@@ -104,11 +104,13 @@ body {
   font-weight: 500;
   line-height: 120%; /* 28.8px */
   letter-spacing: -1.08px;
+  width: 335px;
 }
 @media screen and (min-width: 768px) {
   .adventures__caption {
     font-size: 32px;
     letter-spacing: -1.44px;
+    width: 514px;
   }
 }
 .adventures__color {
