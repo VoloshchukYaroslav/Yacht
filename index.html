@@ -212,13 +212,23 @@
   <div class="container">
     <ul class="offers__list">
       <li class="offers__item">
-        <img src="" alt="diving" class="offers__img" />
+        <picture>
+          <source
+            srcset="../img/diving-mobile@1x.webp, ../img/diving-mobile@2x.webp"
+            media="(min-width: 1200px)"
+          />
+          <source />
+          <source />
+        </picture>
+        <button class="offers__btn" type="button">Diving</button>
       </li>
       <li class="offers__item">
         <img src="" alt="fishing" class="offers__img" />
+        <button class="offers__btn" type="button">Fishing</button>
       </li>
       <li class="offers__item">
         <img src="" alt="rest-on-the-beach" class="offers__img" />
+        <button class="offers__btn" type="button">Sunbathing</button>
       </li>
     </ul>
   </div>
