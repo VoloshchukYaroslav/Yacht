@@ -7,10 +7,21 @@
     padding: 32px 32px 35px 32px;
   }
 
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &__logo {
     width: 146px;
     height: 10px;
     color: $text-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.18; /* 16.52px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 
     @media screen and (min-width: 768px) {
       width: 185.866px;
@@ -26,7 +37,7 @@
       gap: 24px;
     }
   }
-  &__nav {
+  &__link {
     color: $text-color;
     font-size: 14px;
     font-style: normal;
@@ -47,21 +58,27 @@
 .menu {
   padding-top: 24px;
   padding-bottom: 522px;
-  background-image: url(../../img/menu-bg-mobile@1x.webp);
+  background-image: url(../img/menu-bg-mobile@1x.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   overflow: hidden;
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../img/menu-bg-mobile@2x.webp);
-  }
-  .is-hidden {
-    opacity: 0;
-    pointer-events: none;
+    background-image: url(../img/menu-bg-mobile@2x.webp);
   }
 
   &__link {
@@ -73,4 +90,9 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
