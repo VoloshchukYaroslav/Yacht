@@ -78,6 +78,73 @@ body {
     gap: 24px;
   }
 }
+.header__nav {
+  color: #f6f5ef;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.header__btn {
+  display: block;
+}
+
+.menu {
+  width: 300px;
+  height: 300px;
+  padding-top: 24px;
+  padding-bottom: 522px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  opacity: 1;
+  background-color: red;
+}
+.menu__link {
+  color: #f6f5ef;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18; /* 16.52px */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero {
+  background: #11131f;
+}
+.hero__title {
+  width: 554px;
+  color: var(--white, #F6F5EF);
+  /* h1 */
+  font-family: "DM Sans";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 66px */
+  letter-spacing: -2.7px;
+}
+.hero__span {
+  background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "DM Sans";
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -2.7px;
+}
 
 .adventures {
   background-color: #11131F;
