@@ -78,6 +78,79 @@ body {
     gap: 24px;
   }
 }
+.header__nav {
+  color: #f6f5ef;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.header__btn {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.menu {
+  padding-top: 24px;
+  padding-bottom: 522px;
+  background-image: url(../../img/menu-bg-mobile@1x.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .menu {
+    background-image: url(../../img/menu-bg-mobile@2x.webp);
+  }
+}
+.menu .is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.menu__link {
+  color: #f6f5ef;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18; /* 16.52px */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.hero {
+  background: #11131f;
+}
+.hero__title {
+  width: 554px;
+  color: var(--white, #F6F5EF);
+  /* h1 */
+  font-family: "DM Sans";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 66px */
+  letter-spacing: -2.7px;
+}
+.hero__span {
+  background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "DM Sans";
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -2.7px;
+}
 
 .adventures {
   background-color: #11131F;
@@ -96,6 +169,12 @@ body {
     padding-bottom: 221px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .adventures__desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .adventures__caption {
   color: #f6f5ef;
   font-family: "DM Sans";
@@ -105,6 +184,7 @@ body {
   line-height: 120%; /* 28.8px */
   letter-spacing: -1.08px;
   width: 335px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .adventures__caption {
@@ -114,7 +194,10 @@ body {
   }
 }
 .adventures__color {
-  color: 92deg, #BEC7C2 41.03%, #A1B5BA 90.31%;
+  background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "DM Sans";
   font-size: 24px;
   font-style: italic;
@@ -128,6 +211,16 @@ body {
     letter-spacing: -1.44px;
   }
 }
+.adventures__list {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .adventures__list {
+    justify-content: end;
+  }
+}
 .adventures__item {
   color: #f6f5ef;
   font-family: "DM Sans";
@@ -138,8 +231,6 @@ body {
   letter-spacing: -0.28px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-top: 32px;
   width: 161px;
 }
 @media screen and (min-width: 768px) {
