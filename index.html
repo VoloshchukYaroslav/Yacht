@@ -214,11 +214,27 @@
       <li class="offers__item">
         <picture>
           <source
-            srcset="../img/diving-mobile@1x.webp, ../img/diving-mobile@2x.webp"
+            srcset="
+              ../img/diving-mobile@1x.webp 1x,
+              ../img/diving-mobile@2x.webp 2x
+            "
             media="(min-width: 1200px)"
           />
-          <source />
-          <source />
+          <source
+            srcset="
+              ../img/diving-mobile@1x.webp 1x,
+              ../img/diving-mobile@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../img/diving-mobile@1x.webp 1x,
+              ../img/diving-mobile@2x.webp 2x
+            "
+            media="(max-width: 374px)"
+          />
+          <img src="../img/diving-mobile@1x.webp" alt="" />
         </picture>
         <button class="offers__btn" type="button">Diving</button>
       </li>
