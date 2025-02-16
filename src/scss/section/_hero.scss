@@ -1,5 +1,11 @@
+ //  <!--===========================================
+ //                   M A I N
+ //   =========================================== -->
+
 .hero{
     background: $main-background;
+  background-color:  red;
+
   
     &__title{
       width: 554px;
@@ -27,6 +33,64 @@
     }
   
     
+&__text{
+  color: var(--white, #F6F5EF);
+/* main text */
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+letter-spacing: -0.32px;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------  
+
+// <!--===========================================
+//                 C A R D   Y A H T
+// =========================================== -->
+
+&__card{
+  width: 462.022px;
+height: 651.365px;
+flex-shrink: 0;
+position: relative;
+background: url(<path-to-image>) lightgray -35.857px -45.287px / 123.08% 140.164% no-repeat;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------  
+
+// --------------------------------------------
+//                   BUTTON STYLE
+// --------------------------------------------
+
+&__buttons-item{
+  color: var(--white, #F6F5EF);
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 19.8px */
+letter-spacing: -0.81px;
+}
+  
+&__buttons-item:first-child{
+border-radius: 60px;
+background: var(--light-green, #93ABAE);
+padding: 14px 28px;
+}
+
+&__buttons-item:last-child{
+border-radius: 60px;
+border: 1px solid var(--white, #F6F5EF);
+padding: 14px 28px;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------  
   }
   
   
