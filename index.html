@@ -21,7 +21,7 @@
     
     
     <script type="module" crossorigin src="/Yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yacht/assets/index-16216506.css">
+    <link rel="stylesheet" href="/Yacht/assets/index-25b7741c.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -205,15 +205,15 @@
                 <source srcset="../img/yacht-advent/desktop/yahtyachtsofa-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtyachtsofa-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source srcset="../img/yacht-advent/tablet/yahtyachtsofa-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtyachtsofa-tablet@2x.webp 2x" media="(min-width: 768px)">
                 <source srcset="../img/yacht-advent/mobile/yahtyachtsofa-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtsofa-mobile@2x.webp 2x" media="(max-width: 767px)">
-            <img src="../img/yacht-advent/yachtsofa.jpg" alt="yacht" class="adventures_photo">
+            <img src="../img/yacht-advent/yacht-sofa.png" alt="yacht" class="adventures__photo">
         </picture>
         </li>
         <li class="adventures__element">
             <picture>
                 <source srcset="../img/yacht-advent/desktop/yahtyachtinterior-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtyachtinterior-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source srcset="../img/yacht-advent/tablet/yahtyachtinterior-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtyachtinterior-tablet@2x.webp 2x" media="(min-width: 768px)">
-                <source srcset="../img/yacht-advent/mobile/yahtyachtinterior-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtinterior-mobile@2x.webp" media="(max-width: 767px)">
-            <img src="../img/yacht-advent/yachtinterior.jpg" alt="yacht" class="adventures__image">
+                <source srcset="../img/yacht-advent/mobile/yahtyachtinterior-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtinterior-mobile@2x.webp 2x" media="(max-width: 767px)">
+            <img src="../img/yacht-advent/yacht-interior.png" alt="yacht" class="adventures__image">
         </picture>
         </li>
         <li class="adventures__element">
@@ -221,7 +221,7 @@
                 <source srcset="../img/yacht-advent/desktop/yahtyachtsea-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtyachtsea-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source srcset="../img/yacht-advent/tablet/yahtyachtsea-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtyachtsea-tablet@2x.webp 2x" media="(min-width: 768px)">
                 <source srcset="../img/yacht-advent/mobile/yahtyachtsea-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtsea-mobile@2x.webp 2x" media="(max-width: 767px)">
-            <img src="../img/yacht-advent/yachtsea.jpg" alt="yacht" class="adventures__img">
+            <img src="../img/yacht-advent/yacht-sea.png" alt="yacht" class="adventures__img">
         </picture>
         </li>
     </ul>
@@ -274,46 +274,53 @@
 </section>
 
     <section class="rent">
-    <div class="container">
-      <h1 class="rent__title">Rent a yacht now</h1>
-      <img src="" alt="Yacht at sea" class="rent__img">
+  <div class="container">
+    <h1 class="rent__title">Rent a yacht now</h1>
+    <img src="" alt="Yacht at sea" class="rent__img">
+
+    <form class="rent__form">
       <ul class="rent__list">
         <li class="rent__item">
-          <input type="text" class="rent__input" placeholder="Full Name">
+          <label for="name" class="rent__label">Full Name</label>
+          <input type="text" class="rent__name" placeholder="Full Name" required>
         </li>
         <li class="rent__item">
-          <input type="email" class="rent__input" placeholder="Email">
+          <label for="email" class="rent__label">Email</label>
+          <input type="email"  class="rent__email" placeholder="Email" required>
         </li>
         <li class="rent__item">
-          <input type="tel" class="rent__input" placeholder="Phone number">
+          <label for="phone" class="rent__label">Phone number</label>
+          <input type="tel" class="rent__number" placeholder="Phone number" required>
         </li>
         <li class="rent__item">
-          <input type="text" class="rent__input" placeholder="Comment">
+          <label for="comment" class="rent__label">Comment</label>
+          <input type="text" class="rent__comment" placeholder="Comment">
         </li>
       </ul>
-      <button type="button" class="rent__btn" data-modal-open>
+      <button type="submit" class="rent__btn" data-modal-open>
         <svg class="rent__icon">
           <use href=""></use>
         </svg>
         Send
       </button>
-  
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="modal__btn" data-modal-close>
-            <svg class="modal__close">
-              <use href=""></use>
-            </svg>
-          </button>
-          <img src="" alt="White yacht" class="modal__img">
-          <h2 class="modal__title">Thank you</h2>
-          <p class="modal__text">
-            Thank you for choosing Yacht Adventures. Your booking details have been received, and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.
-          </p>
-        </div>
+    </form>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__btn" data-modal-close>
+          <svg class="modal__close">
+            <use href=""></use>
+          </svg>
+        </button>
+        <img src="" alt="White yacht" class="modal__img">
+        <h2 class="modal__title">Thank you</h2>
+        <p class="modal__text">
+          Thank you for choosing Yacht Adventures. Your booking details have been received, and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
     
     <footer class="footer">
   <div class="container">
