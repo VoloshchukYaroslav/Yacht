@@ -92,57 +92,6 @@ width: 185px;
 }
     }
 
-
-&__roster{
-    @media screen and (min-width: 375px){
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    }
-}
-
-
-
-
-&__photo{
-    width: 335px;
-height: 524px;
-
-@media screen and (min-width: 768px){
-    width: 704px;
-height: 631px;
-}
-
-@media screen and (min-width: 1200px){
-    width: 533px;
-height: 473px;
-}
-}
-
-
-&__image{
-    width: 335px;
-height: 289px;
-
-@media screen and (min-width: 768px){
-    width: 308px;
-height: 289px;
-}
-}
-
-
-&__img{
-    width: 260px;
-height: 244px;
-}
-
-
-
-
-
-
-
-
     &__title{
         color: $text-color;
         font-family: "DM Sans";
