@@ -15,6 +15,14 @@ padding-bottom: 98px;
 }
 
 
+&__desktop{
+
+    @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: space-between;
+}
+}
+
     &__caption{
         color: $text-color;
         font-family: "DM Sans";
@@ -24,18 +32,21 @@ font-weight: 500;
 line-height: 120%; /* 28.8px */
 letter-spacing: -1.08px;
 width: 335px;
+margin-bottom: 40px;
 
 @media screen and (min-width: 768px){
     font-size: 32px;
     letter-spacing: -1.44px;
     width: 514px;
-    
 }
     }
 
 &__color{
-   color: $span-color;
-        font-family: "DM Sans";
+    background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "DM Sans";
 font-size: 24px;
 font-style: italic;
 font-weight: 500;
@@ -48,6 +59,16 @@ letter-spacing: -1.08px;
 }
 }
 
+&__list{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+
+    @media screen and (min-width: 768px){
+        justify-content: end;
+    }
+    
+}
 
     &__item{
         color: $text-color;
@@ -59,8 +80,6 @@ line-height: 140%; /* 19.6px */
 letter-spacing: -0.28px;
 display: flex;
 flex-direction: column;
-gap: 14px;
-margin-top: 32px;
 width: 161px;
 
 
@@ -72,6 +91,57 @@ gap: 32px;
 width: 185px;
 }
     }
+
+
+&__roster{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+}
+
+
+
+
+
+    &__photo{
+    width: 335px;
+height: 524px;
+
+@media screen and (min-width: 768px){
+    width: 704px;
+height: 631px;
+}
+
+@media screen and (min-width: 1200px){
+    width: 533px;
+height: 473px;
+}
+}
+
+
+&__image{
+    width: 335px;
+height: 289px;
+
+@media screen and (min-width: 768px){
+    width: 308px;
+}
+}
+
+
+&__img{
+    width: 260px;
+height: 244px;
+}
+
+
+
+
+
+
+
 
     &__title{
         color: $text-color;

@@ -2,13 +2,39 @@
   <div class="container">
     <ul class="offers__list">
       <li class="offers__item">
-        <img src="" alt="diving" class="offers__img" />
+        <picture>
+          <source
+            srcset="
+              ../img/diving-mobile@1x.webp 1x,
+              ../img/diving-mobile@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../img/diving-mobile@1x.webp 1x,
+              ../img/diving-mobile@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../img/diving-mobile@1x.webp 1x,
+              ../img/diving-mobile@2x.webp 2x
+            "
+            media="(max-width: 374px)"
+          />
+          <img src="../img/diving-mobile@1x.webp" alt="" />
+        </picture>
+        <button class="offers__btn" type="button">Diving</button>
       </li>
       <li class="offers__item">
         <img src="" alt="fishing" class="offers__img" />
+        <button class="offers__btn" type="button">Fishing</button>
       </li>
       <li class="offers__item">
         <img src="" alt="rest-on-the-beach" class="offers__img" />
+        <button class="offers__btn" type="button">Sunbathing</button>
       </li>
     </ul>
   </div>
