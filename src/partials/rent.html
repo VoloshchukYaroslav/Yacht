@@ -1,7 +1,14 @@
 <section class="rent">
     <div class="container">
+      <div class="rent__div">
       <h1 class="rent__title">Rent a yacht now</h1>
-      <img src="" alt="Yacht at sea" class="rent__img">
+      <picture>
+        <source srcset="../img/yacht-advent/desktop/yahtsailingyacht-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtsailingyacht-desktop@2x.webp 2x" media="(min-width: 1200px)"> 
+        <source srcset="../img/yacht-advent/tablet/yahtsailingyacht-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtsailingyacht-tablet@2x.webp 2x" media="(min-width: 768px)">
+        <source srcset="../img/yacht-advent/mobile/yahtsailingyacht-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtsailingyacht-mobile@2x.webp 2x" media="(max-width: 767px)">
+      <img src="../img/yacht-advent/sailing-yacht.png" alt="Yacht at sea" class="rent__img">
+    </picture>
+  </div>
       <ul class="rent__list">
         <li class="rent__item">
           <input type="text" class="rent__input" placeholder="Full Name">
