@@ -21,7 +21,7 @@
     
     
     <script type="module" crossorigin src="/Yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yacht/assets/index-0229863b.css">
+    <link rel="stylesheet" href="/Yacht/assets/index-505672c1.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -355,18 +355,16 @@
                 <source srcset="../img/yacht-advent/desktop/yahtyachtsofa-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtyachtsofa-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source srcset="../img/yacht-advent/tablet/yahtyachtsofa-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtyachtsofa-tablet@2x.webp 2x" media="(min-width: 768px)">
                 <source srcset="../img/yacht-advent/mobile/yahtyachtsofa-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtsofa-mobile@2x.webp 2x" media="(max-width: 767px)">
-            <img src="../img/yacht-advent/yacht-sofa.png" alt="yacht" class="adventures_photo">
+            <img src="../img/yacht-advent/yacht-sofa.png" alt="yacht" class="adventures__photo">
         </picture>
         </li>
         <li class="adventures__element">
             <picture>
                 <source srcset="../img/yacht-advent/desktop/yahtyachtinterior-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtyachtinterior-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source srcset="../img/yacht-advent/tablet/yahtyachtinterior-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtyachtinterior-tablet@2x.webp 2x" media="(min-width: 768px)">
- yacht-advent
                 <source srcset="../img/yacht-advent/mobile/yahtyachtinterior-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtinterior-mobile@2x.webp" media="(max-width: 767px)">
 
                 <source srcset="../img/yacht-advent/mobile/yahtyachtinterior-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtinterior-mobile@2x.webp 2x" media="(max-width: 767px)">
-main
             <img src="../img/yacht-advent/yacht-interior.png" alt="yacht" class="adventures__image">
         </picture>
         </li>
@@ -486,34 +484,43 @@ main
 </section>
 
     <section class="rent">
-    <div class="container">
-      <h1 class="rent__title">Rent a yacht now</h1>
-      <img src="" alt="Yacht at sea" class="rent__img">
-      <ul class="rent__list">
-        <li class="rent__item">
-          <label for="name" class="rent__label">Full Name</label>
-          <input type="text" class="rent__name" placeholder="Full Name" required>
-        </li>
-        <li class="rent__item">
-          <label for="email" class="rent__label">Email</label>
-          <input type="email"  class="rent__email" placeholder="Email" required>
-        </li>
-        <li class="rent__item">
-          <label for="phone" class="rent__label">Phone number</label>
-          <input type="tel" class="rent__number" placeholder="Phone number" required>
-        </li>
-        <li class="rent__item">
-          <label for="comment" class="rent__label">Comment</label>
-          <input type="text" class="rent__comment" placeholder="Comment">
-        </li>
-      </ul>
-      <button type="submit" class="rent__btn" data-modal-open>
-        <svg class="rent__icon">
-          <use href=""></use>
-        </svg>
-        Send
-      </button>
-    </form>
+  <div class="container">
+    <div class="rent__div">
+    <h1 class="rent__title">Rent a yacht now</h1>
+    <picture>
+      <source srcset="../img/yacht-advent/desktop/yahtsailingyacht-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtsailingyacht-desktop@2x.webp 2x" media="(min-width: 1200px)">
+      <source srcset="../img/yacht-advent/tablet/yahtsailingyacht-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtsailingyacht-tablet@2x.webp 2x" media="(min-width: 768px)">
+      <source srcset="../img/yacht-advent/mobile/yahtsailingyacht-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtsailingyacht-mobile@2x.webp 2x" media="(max-width: 767px)">
+    <img src="../img/yacht-advent/sailing-yacht.png" alt="Yacht at sea" class="rent__img">
+  </picture>
+</div>
+<div class="rent__divv">
+    <ul class="rent__list">
+      <li class="rent__item">
+        <input type="text" class="rent__input" placeholder="Full Name">
+      </li>
+      <div class="rent__border"></div>
+      <li class="rent__item">
+        <input type="email" class="rent__input" placeholder="Email">
+      </li>
+      <div class="rent__border"></div>
+      <li class="rent__item">
+        <input type="tel" class="rent__input" placeholder="Phone number">
+      </li>
+      <div class="rent__border"></div>
+      <li class="rent__item">
+        <textarea  class="rent__input" placeholder="Comment"></textarea>
+      </li>
+      <div class="rent__border"></div>
+    </ul>
+    <button type="button" class="rent__btn" data-modal-open>
+      <svg class="rent__icon">
+        <use href=""></use>
+      </svg>
+      Send
+    </button>
+  </div>
+
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -531,6 +538,8 @@ main
     </div>
   </div>
 </section>
+
+
     
     <footer class="footer">
   <div class="container">
