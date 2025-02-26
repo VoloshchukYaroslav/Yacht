@@ -94,8 +94,12 @@ gap: 16px;
         font-weight: 500;
         line-height: 120%; /* 16.8px */
         letter-spacing: -0.63px;
+        width: 335px;
 background: transparent;
 border: none;
+border-bottom: 1px solid $text-color;
+outline: none;
+padding-bottom: 16px;
 
 
 @media screen and (min-width: 768px){
@@ -106,8 +110,15 @@ font-style: normal;
 font-weight: 500;
 line-height: 120%; /* 19.2px */
 letter-spacing: -0.72px;
+width: 364px;
+}
+
+@media screen and (min-width: 1200px){
+    width: 443px;
 }
     }
+
+
 
 
     &__input::placeholder{
@@ -128,25 +139,7 @@ font-weight: 500;
 line-height: 120%; /* 19.2px */
 letter-spacing: -0.72px;
 }
-    }
-
-
-&__border{
-    width: 335px;
-height: 1px;
-background: $text-color;
-margin-top: 16px;
-
-@media screen and (min-width: 768px){
-    width: 364px;
 }
-
-@media screen and (min-width: 1200px){
-    width: 443px;
-}
-
-}
-
 
 
 
@@ -171,6 +164,38 @@ margin-top: 16px;
             font-size: 18px;
             letter-spacing: -0.81px;
         }
+    }
+}
+
+.modal{
+    &__title{
+        color: $text-color;
+font-family: "DM Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 28.8px */
+letter-spacing: -1.08px;
+
+@media screen and (min-width: 768px){
+font-size: 32px;
+letter-spacing: -1.44px;
+}
+    }
+
+    &__text{
+        color: $text-color;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+letter-spacing: -0.28px;
+
+@media screen and (min-width: 768px){
+font-size: 16px;
+letter-spacing: -0.32px;
+}
     }
 }
 
