@@ -21,7 +21,7 @@
     
     
     <script type="module" crossorigin src="/Yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yacht/assets/index-505672c1.css">
+    <link rel="stylesheet" href="/Yacht/assets/index-1710865d.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -494,36 +494,33 @@
     <img src="../img/yacht-advent/sailing-yacht.png" alt="Yacht at sea" class="rent__img">
   </picture>
 </div>
-<div class="rent__divv">
+<form class="rent__form">
     <ul class="rent__list">
       <li class="rent__item">
         <input type="text" class="rent__input" placeholder="Full Name">
       </li>
-      <div class="rent__border"></div>
       <li class="rent__item">
         <input type="email" class="rent__input" placeholder="Email">
       </li>
-      <div class="rent__border"></div>
       <li class="rent__item">
         <input type="tel" class="rent__input" placeholder="Phone number">
       </li>
-      <div class="rent__border"></div>
       <li class="rent__item">
         <textarea  class="rent__input" placeholder="Comment"></textarea>
       </li>
-      <div class="rent__border"></div>
     </ul>
-    <button type="button" class="rent__btn" data-modal-open>
+  </form>
+    <button type="submit" class="rent__btn" data-modal-open>
       <svg class="rent__icon">
         <use href=""></use>
       </svg>
       Send
     </button>
-  </div>
+  
 
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="rent__modal">
         <button type="button" class="modal__btn" data-modal-close>
           <svg class="modal__close">
             <use href=""></use>
