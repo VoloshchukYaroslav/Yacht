@@ -1,0 +1,65 @@
+.offers {
+  padding-top: 164px;
+  padding-bottom: 164px;
+  background: $main-background;
+
+  &__diving {
+    width: 335px;
+    height: 335px;
+    border-radius: 40px;
+
+    @media screen and (min-width: 1280px) {
+      width: 712px;
+      height: 632px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 704px;
+      height: 632px;
+    }
+  }
+
+  &__btn {
+    padding: 14px 28px;
+    border-radius: 60px;
+    border: none;
+    background: #fff;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+  }
+
+  &__fishing {
+    width: 335px;
+    height: 335px;
+    border-radius: 40px;
+
+    @media screen and (min-width: 768px) {
+      width: 400px;
+      height: 389px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 440px;
+      height: 428px;
+    }
+  }
+
+  &__sunbathing {
+    width: 335px;
+    height: 335px;
+    border-radius: 40px;
+
+    @media screen and (min-width: 768px) {
+      width: 380px;
+      height: 352px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 436px;
+      height: 352px;
+    }
+  }
+}

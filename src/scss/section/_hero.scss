@@ -1,96 +1,154 @@
- //  <!--===========================================
- //                   M A I N
- //   =========================================== -->
+//  <!--===========================================
+//                   M A I N
+//   =========================================== -->
 
-.hero{
-    background: $main-background;
-  background-color:  red;
-
+.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "right left";
   
-    &__title{
-      width: 554px;
-      color: var(--white, #F6F5EF);
-  /* h1 */
-  font-family: "DM Sans";
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 66px */
-  letter-spacing: -2.7px;
-    }
-  
-    &__span{
-      background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "DM Sans";
-  font-size: 60px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 110%;
-  letter-spacing: -2.7px;
-    }
-  
-    
-&__text{
-  color: var(--white, #F6F5EF);
-/* main text */
-font-family: "DM Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; /* 22.4px */
-letter-spacing: -0.32px;
 }
 
+.hero {
+  background: $main-background;
 
-
-// ---------------------------------------------------------------------------------------------------------------------------------------------  
-
-// <!--===========================================
-//                 C A R D   Y A H T
-// =========================================== -->
+&__main{
+  grid-area: left;
+}
 
 &__card{
-  width: 462.022px;
-height: 651.365px;
-flex-shrink: 0;
-position: relative;
-background: url(<path-to-image>) lightgray -35.857px -45.287px / 123.08% 140.164% no-repeat;
+  grid-area: right;
 }
 
-// ---------------------------------------------------------------------------------------------------------------------------------------------  
 
-// --------------------------------------------
-//                   BUTTON STYLE
-// --------------------------------------------
-
-&__buttons-item{
-  color: var(--white, #F6F5EF);
+  &__title {
+    width: 332px;
+    color: var(--white, #F6F5EF);
 font-family: "DM Sans";
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%;
+letter-spacing: -1.62px;
+
+@media screen and (min-width: 768px) {
+  width: 554px;
+font-size: 60px;
+font-style: normal;
+letter-spacing: -2.7px;
+}
+  }
+
+  &__span {
+    background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "DM Sans";
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%;
+letter-spacing: -1.62px;
+
+@media screen and (min-width: 768px) {
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: -2.7px;
+ }
+  }
+
+  &__text {
+    margin-top: 16px;
+    width: 539px;
+    color: var(--white, #F6F5EF);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.28px;
+
+    @media screen and (min-width: 768px) {
+/* main text */
+font-size: 16px;
+font-style: normal;
+letter-spacing: -0.32px;
+    }
+  }
+
+  
+
+  // <!--===========================================
+  //                 C A R D   Y A H T
+  // =========================================== -->
+
+
+  &__card {
+    margin-right: px;
+    width: 363.327px;
+    height: 465.105px;
+    flex-shrink: 0;
+    // background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+    @media screen and (min-width: 768px) {
+      width: 462.022px;
+height: 651.365px;
+    }
+  }
+
+  
+
+  // --------------------------------------------
+  //                   BUTTON STYLE
+  // --------------------------------------------
+
+  &__buttons{
+    display: flex;
+    gap: 10px;
+  }
+
+  &__btn {
+    margin-top: 32px;
+    padding: 14px 28px;
+    border: none;
+    
+    color: var(--white, #F6F5EF);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    letter-spacing: -0.63px;
+
+    @media screen and (min-width: 768px) {
 font-size: 18px;
 font-style: normal;
-font-weight: 700;
-line-height: 110%; /* 19.8px */
 letter-spacing: -0.81px;
-}
-  
-&__buttons-item:first-child{
-border-radius: 60px;
-background: var(--light-green, #93ABAE);
-padding: 14px 28px;
-}
-
-&__buttons-item:last-child{
-border-radius: 60px;
-border: 1px solid var(--white, #F6F5EF);
-padding: 14px 28px;
-}
-
-
-
-// ---------------------------------------------------------------------------------------------------------------------------------------------  
+    }
   }
-  
-  
+
+  &__btn__primary {
+    border-radius: 60px;
+    background: var(--light-green, #93ABAE);
+    transform: background ;
+     transition: 250ms; 
+  }
+
+  &__btn__primary:hover{
+    background: #88B3B9;
+  }
+
+  &__btn__secondary {
+    border-radius: 60px;
+border: 1px solid var(--white, #F6F5EF);
+background-color: transparent;
+transform: border, color ;
+transition: 250ms;
+  }
+
+  &__btn__secondary:hover{
+    color: var(--light-green, #93ABAE);
+border: 1px solid var(--linear-green, #BEC7C2);
+  }
+}
