@@ -119,8 +119,6 @@ width: 364px;
     }
 
 
-
-
     &__input::placeholder{
         color: $text-color;
         font-family: "DM Sans";
@@ -140,8 +138,6 @@ line-height: 120%; /* 19.2px */
 letter-spacing: -0.72px;
 }
 }
-
-
 
 
     &__btn{
@@ -165,9 +161,77 @@ letter-spacing: -0.72px;
             letter-spacing: -0.81px;
         }
     }
+
+
+    &__modal{
+        border-radius: 20px;
+        background-color: $ul-color;
+    width: 335px;
+height: 396px;
+padding-top: 14px;
+padding-bottom: 40px;
+padding-left: 24px;
+padding-right: 14px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width: 768px){
+    width: 570px;
+height: 522px;
+padding-top: 32px;
+padding-bottom: 64px;
+padding-left: 24px;
+padding-right: 32px;
+}
+    }
 }
 
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 1;
+}
+
+.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.is-hidden .modal{
+    transform: translate(-2000px, 2000px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
 .modal{
+&__close{
+    width: 20px;
+height: 20px;
+
+@media screen and (min-width: 768px){
+    width: 24px;
+height: 24px;
+}
+}
+
+&__img{
+    width: 287px;
+height: 149px;
+
+@media screen and (min-width: 768px){
+    width: 338px;
+height: 198px;
+}
+}
+
     &__title{
         color: $text-color;
 font-family: "DM Sans";
@@ -191,10 +255,12 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 19.6px */
 letter-spacing: -0.28px;
+width: 287px;
 
 @media screen and (min-width: 768px){
 font-size: 16px;
 letter-spacing: -0.32px;
+width: 442px;
 }
     }
 }
