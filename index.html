@@ -18,10 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
     
     
     <script type="module" crossorigin src="/Yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yacht/assets/index-322876f7.css">
+    <link rel="stylesheet" href="/Yacht/assets/index-25b7e9d4.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -379,6 +383,9 @@
     </ul>
     <h2 class="adventures__title">Choose your dream<br>yacht and sail away<br>into the sunset</h2>
     <button type="button" class="adventures__btn">Yacht rental</button>
+    <button type="button" class="adventures__btn">
+        <a href="./rent.html" class="adventures__btn-link">Yacht rental</a>
+      </button>
 </div>
 </section>
 
@@ -510,7 +517,7 @@
       </li>
     </ul>
   </form>
-    <button type="submit" class="rent__btn" data-modal-open>
+    <button type="submit" class="rent__btn" data-modal-rent-open>
       <svg class="rent__icon">
         <use href=""></use>
       </svg>
@@ -519,14 +526,19 @@
   
 
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal-rent>
       <div class="rent__modal">
-        <button type="button" class="modal__btn" data-modal-close>
+        <button type="button" class="modal__btn" data-modal-rent-close>
           <svg class="modal__close">
             <use href=""></use>
           </svg>
         </button>
-        <img src="" alt="White yacht" class="modal__img">
+        <picture>
+          <source srcset="../img/yacht-advent/desktop/yahtyachtavatar-desktop@1x.webp 1x, ../img/yacht-advent/desktop/yahtyachtavatar-desktop@2x.webp 2x" media="(min-width: 1200px)">
+          <source srcset="../img/yacht-advent/tablet/yahtyachtavatar-tablet@1x.webp 1x, ../img/yacht-advent/tablet/yahtyachtavatar-tablet@2x.webp 2x" media="(min-width: 768px)">
+          <source srcset="../img/yacht-advent/mobile/yahtyachtavatar-mobile@1x.webp 1x, ../img/yacht-advent/mobile/yahtyachtavatar-mobile@2x.webp 2x" media="(max-width: 767px)">
+        <img src="../img/yacht-advent/yacht-avatar.png" alt="White yacht" class="modal__img">
+      </picture>
         <h2 class="modal__title">Thank you</h2>
         <p class="modal__text">
           Thank you for choosing Yacht Adventures. Your booking details have been received, and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.
@@ -703,5 +715,6 @@
 
     
     <script src="./menu.js"></script>
+    <script src="./rent.js"></script>
   </body>
 </html>
