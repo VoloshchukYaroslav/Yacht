@@ -12,5 +12,12 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M4.8 0.4h22.4c2.43 0 4.4 1.97 4.4 4.4v22.4c0 2.43-1.97 4.4-4.4 4.4h-22.4c-2.43 0-4.4-1.97-4.4-4.4v-22.4c0-2.43 1.97-4.4 4.4-4.4z"></path>
 <path d="M18.552 10.523h1.448v-2.417c-0.701-0.072-1.405-0.107-2.11-0.106-2.094 0-3.526 1.262-3.526 3.572v1.991h-2.364v2.706h2.364v6.931h2.833v-6.931h2.356l0.354-2.706h-2.71v-1.725c0-0.798 0.216-1.315 1.355-1.315z"></path>
 </symbol>
+<symbol id="icon-arrow" viewBox="0 0 64 32">
+<path d="M44.444 0.604l19.556 15.396-19.556 15.396v-12.729h-44.444v-5.333h44.444v-12.729z"></path>
+</symbol>                                                                                                                            
+<symbol id="icon-cross" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.0800" d="M24 8l-16 16"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.0800" d="M8 8l16 16"></path>
+</symbol>                                                                          
 </defs>
 </svg>
