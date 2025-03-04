@@ -3,6 +3,10 @@
   padding-bottom: 164px;
   background: $main-background;
 
+  &__box {
+    position: relative;
+  }
+
   &__diving {
     width: 335px;
     height: 335px;
@@ -29,6 +33,10 @@
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.63px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
   }
 
   &__fishing {
