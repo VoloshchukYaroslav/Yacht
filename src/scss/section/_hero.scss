@@ -2,22 +2,44 @@
 //                   M A I N
 //   =========================================== -->
 
-.box{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "right left";
-  
-}
+.box {
+  display: flex;
+  flex-direction: row; /* Горизонтально при больших экранах */
+  justify-content: center;
+  flex-wrap: nowrap; /* Запрещаем перенос при больших экранах */
+
+  @media screen and (max-width: 1280px) {
+    flex-wrap: wrap; /* Разрешаем перенос при меньших экранах */
+    flex-direction: column; /* Столбцом на мобильных */
+    text-align: unset;
+  }
+}  
 
 .hero {
   background: $main-background;
 
 &__main{
-  grid-area: left;
+  order: 2;
+
+  @media screen and (max-width: 768px) {
+    order: 1;
+  }
+
+  @media screen and (max-width: 1280px) {
+    order: 1;
+  }
 }
 
 &__card{
-  grid-area: right;
+  order: 1;
+
+  @media screen and (max-width: 768px) {
+    order: 2;
+  }
+
+  @media screen and (max-width: 1280px) {
+    order: 2;
+  }
 }
 
 
@@ -30,12 +52,19 @@ font-style: normal;
 font-weight: 500;
 line-height: 110%;
 letter-spacing: -1.62px;
+margin-top: 40px;
 
 @media screen and (min-width: 768px) {
-  width: 554px;
+  width: 698px;
 font-size: 60px;
 font-style: normal;
 letter-spacing: -2.7px;
+margin-top: 64px;
+}
+
+@media screen and (min-width: 1280px) {
+  margin-top: 132px;
+  width: 500px;
 }
   }
 
@@ -59,8 +88,8 @@ letter-spacing: -1.62px;
   }
 
   &__text {
-    margin-top: 16px;
-    width: 539px;
+    margin-top: 14px;
+    width: 320px;
     color: var(--white, #F6F5EF);
     font-family: "DM Sans";
     font-size: 14px;
@@ -70,10 +99,10 @@ letter-spacing: -1.62px;
     letter-spacing: -0.28px;
 
     @media screen and (min-width: 768px) {
-/* main text */
-font-size: 16px;
-font-style: normal;
-letter-spacing: -0.32px;
+      margin-top: 16px;
+      width: 539px;
+      font-size: 16px;
+      letter-spacing: -0.32px;
     }
   }
 
@@ -85,19 +114,132 @@ letter-spacing: -0.32px;
 
 
   &__card {
-    margin-right: px;
+    margin-top: 64px;
+    border-radius: 26px;
+    margin-right: 217px;
     width: 363.327px;
     height: 465.105px;
-    flex-shrink: 0;
-    // background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    background: url(../img/bodya-imgs/hero-bg.webp) lightgray -105.437px -66.802px / 258.356% 172.321% no-repeat;
+
 
     @media screen and (min-width: 768px) {
-      width: 462.022px;
-height: 651.365px;
+      width: 426px;
+      height: 598px;
     }
   }
 
+ &__list{
+  display: flex;
+  margin-top: 27px;
+  margin-left: 32px;
+  gap: 0
+ }
+
+&__item{
+  position: relative;
+  overflow: hidden;
+  margin: 0 -5px;
+}
+
+
+&__item:nth-child(1){
+  z-index: 2;
+}
+
+&__item:nth-child(2){
+  z-index: 1;
+}
+
+&__text-img{
+  width: 96px;
+  color: $main-background;
+font-family: "DM Sans";
+font-size: 14px;
+font-weight: 700;
+line-height: 110%; /* 15.4px */
+letter-spacing: 0.56px;
+text-transform: uppercase;
+text-align: center;
+margin-top: 13px;
+margin-left: 32px;
+
+@media screen and (min-width: 768px) {
+  margin-top: 11px;
+  }
+}
+
+  &__img{
+width: 48px;
+  height: 48px;
+
+@media screen and (min-width: 768px) {
+  width: 56px;
+  height: 56px;
+  }
+}
+
+  &__img-man{
+  width: 133px;
+  height: 133px;
+border-radius: 24px;
+margin-left: 305px;
+transform: translateY(-78px); 
+
+@media screen and (min-width: 768px) {
+  width: 233px;
+  height: 233px;
+  }
+  }
+
+&__img-yaht{
+  position: absolute;
+  width: 378px;
+height: 221px;
+  transform: translateY(-140px); 
+}
   
+&__price{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+ margin-left: 37px;
+ gap: 14px;
+
+ }
+
+ &__price-title{
+  color: $main-background;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 110%; /* 52.8px */
+  letter-spacing: -2.16px;
+  text-transform: uppercase;
+  margin-top: 37px;
+
+  @media screen and (min-width: 768px) {
+    width: 104px;
+    height: 46px;
+    }
+ }
+
+ &__price-text{
+  color: $main-background;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.63px;
+  width: 169px;
+  height: 39px;
+  margin-top: 37px;
+
+  @media screen and (min-width: 768px) {
+    width: 208px;
+    height: 36px;
+  }
+ }
 
   // --------------------------------------------
   //                   BUTTON STYLE
@@ -151,4 +293,7 @@ transition: 250ms;
     color: var(--light-green, #93ABAE);
 border: 1px solid var(--linear-green, #BEC7C2);
   }
+
+
 }
+
