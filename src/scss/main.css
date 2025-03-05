@@ -675,6 +675,10 @@ body {
     letter-spacing: -0.81px;
   }
 }
+.rent__icon {
+  width: 18px;
+  height: 8.66px;
+}
 .rent__modal {
   border-radius: 20px;
   background-color: #1f212d;
@@ -720,6 +724,10 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal__btn {
+  background: transparent;
+  border: none;
+}
 .modal__close {
   width: 20px;
   height: 20px;
