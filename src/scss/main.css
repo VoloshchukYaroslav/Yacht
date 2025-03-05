@@ -373,12 +373,14 @@ body {
   .adventures__photo {
     width: 704px;
     height: 631px;
+    margin-bottom: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
   .adventures__photo {
     width: 533px;
     height: 473px;
+    margin-top: 64px;
   }
 }
 .adventures__image {
@@ -389,6 +391,12 @@ body {
   .adventures__image {
     width: 308px;
     height: 289px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .adventures__image {
+    margin-top: 407px;
+    margin-right: 32px;
   }
 }
 .adventures__img {
@@ -474,7 +482,6 @@ body {
   .offers__fishing {
     width: 400px;
     height: 389px;
-
   }
 }
 @media screen and (min-width: 1280px) {
@@ -500,33 +507,6 @@ body {
     height: 352px;
   }
 }
-=======
-  }
-}
-@media screen and (min-width: 1280px) {
-  .offers__fishing {
-    width: 440px;
-    height: 428px;
-  }
-}
-.offers__sunbathing {
-  width: 335px;
-  height: 335px;
-  border-radius: 40px;
-}
-@media screen and (min-width: 768px) {
-  .offers__sunbathing {
-    width: 380px;
-    height: 352px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .offers__sunbathing {
-    width: 436px;
-    height: 352px;
-  }
-}
-
 
 .rent {
   background-color: #11131F;
@@ -629,7 +609,6 @@ body {
     line-height: 120%; /* 19.2px */
     letter-spacing: -0.72px;
     width: 364px;
-
   }
 }
 @media screen and (min-width: 1200px) {
@@ -637,27 +616,7 @@ body {
     width: 443px;
   }
 }
-
-  }
-}
-@media screen and (min-width: 1200px) {
-  .rent__input {
-    width: 443px;
-  }
-}
-
 .rent__input::-moz-placeholder {
-  color: #f6f5ef;
-  font-family: "DM Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%; /* 16.8px */
-  letter-spacing: -0.63px;
-}
-
-=======
-.rent__input:-ms-input-placeholder {
   color: #f6f5ef;
   font-family: "DM Sans";
   font-size: 14px;
@@ -685,7 +644,7 @@ body {
     line-height: 120%; /* 19.2px */
     letter-spacing: -0.72px;
   }
-  .rent__input:-ms-input-placeholder {
+  .rent__input::placeholder {
     color: #f6f5ef;
     font-family: "DM Sans";
     font-size: 16px;
@@ -694,7 +653,6 @@ body {
     line-height: 120%; /* 19.2px */
     letter-spacing: -0.72px;
   }
-
 }
 .rent__btn {
   color: #f6f5ef;
@@ -738,7 +696,7 @@ body {
     height: 522px;
     padding-top: 32px;
     padding-bottom: 64px;
-    padding-left: 24px;
+    padding-left: 64px;
     padding-right: 32px;
   }
 }
@@ -790,62 +748,17 @@ body {
   font-weight: 500;
   line-height: 120%; /* 28.8px */
   letter-spacing: -1.08px;
-}
-@media screen and (min-width: 768px) {
-  .modal__title {
-    font-size: 32px;
-    letter-spacing: -1.44px;
-  }
-}
-=======
-  .rent__input::placeholder {
-    color: #f6f5ef;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 19.2px */
-    letter-spacing: -0.72px;
-  }
-}
-.rent__btn {
-  color: #f6f5ef;
-  font-family: "DM Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%; /* 15.4px */
-  letter-spacing: -0.63px;
-  text-align: center;
-  border-radius: 60px;
-  border: 1px solid #f6f5ef;
-  padding: 14px 28px;
-  background: transparent;
   margin-top: 24px;
-}
-@media screen and (min-width: 768px) {
-  .rent__btn {
-    font-size: 18px;
-    letter-spacing: -0.81px;
-  }
-}
-
-.modal__title {
-  color: #f6f5ef;
-  font-family: "DM Sans";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%; /* 28.8px */
-  letter-spacing: -1.08px;
+  margin-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
   .modal__title {
     font-size: 32px;
     letter-spacing: -1.44px;
+    margin-top: 21px;
+    margin-bottom: 16px;
   }
 }
-
 .modal__text {
   color: #f6f5ef;
   font-family: "DM Sans";
@@ -854,19 +767,13 @@ body {
   font-weight: 400;
   line-height: 140%; /* 19.6px */
   letter-spacing: -0.28px;
-
   width: 287px;
-=======
-
 }
 @media screen and (min-width: 768px) {
   .modal__text {
     font-size: 16px;
     letter-spacing: -0.32px;
-
     width: 442px;
-=======
-
   }
 }
 

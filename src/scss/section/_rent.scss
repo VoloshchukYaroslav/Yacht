@@ -183,7 +183,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 height: 522px;
 padding-top: 32px;
 padding-bottom: 64px;
-padding-left: 24px;
+padding-left: 64px;
 padding-right: 32px;
 }
     }
@@ -240,10 +240,14 @@ font-style: normal;
 font-weight: 500;
 line-height: 120%; /* 28.8px */
 letter-spacing: -1.08px;
+margin-top: 24px;
+margin-bottom: 14px;
 
 @media screen and (min-width: 768px){
 font-size: 32px;
 letter-spacing: -1.44px;
+margin-top: 21px;
+margin-bottom: 16px;
 }
     }
 
