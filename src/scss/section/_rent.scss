@@ -163,6 +163,12 @@ letter-spacing: -0.72px;
     }
 
 
+    &__icon{
+        width: 18px;
+height: 8.66px;
+    }
+
+
     &__modal{
         border-radius: 20px;
         background-color: $ul-color;
@@ -212,6 +218,11 @@ padding-right: 32px;
 
 
 .modal{
+&__btn{
+    background: transparent;
+    border: none;
+}
+
 &__close{
     width: 20px;
 height: 20px;
