@@ -3,6 +3,31 @@
   padding-bottom: 164px;
   background: $main-background;
 
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @media screen and (min-width: 736px) {
+      gap: 64px;
+    }
+  }
+
+  &__item:nth-child(3) &__box {
+    @media screen and (min-width: 1248px) {
+      margin-left: 330px;
+    }
+  }
+  &__item:nth-child(2) &__box {
+    @media screen and (min-width: 736px) {
+      margin-left: 300px;
+    }
+
+    @media screen and (min-width: 1248px) {
+      margin-left: 0;
+    }
+  }
+
   &__box {
     position: relative;
   }
@@ -12,12 +37,12 @@
     height: 335px;
     border-radius: 40px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1248px) {
       width: 712px;
       height: 632px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 736px) {
       width: 704px;
       height: 632px;
     }
@@ -35,8 +60,13 @@
     letter-spacing: -0.63px;
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 0;
+    bottom: 24px;
+    left: 24px;
+
+    @media screen and (min-width: 736px) {
+      bottom: 32px;
+      left: 32px;
+    }
   }
 
   &__fishing {
@@ -44,14 +74,15 @@
     height: 335px;
     border-radius: 40px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 736px) {
       width: 400px;
       height: 389px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1248px) {
       width: 440px;
       height: 428px;
+      margin-top: 204px;
     }
   }
 
@@ -60,12 +91,12 @@
     height: 335px;
     border-radius: 40px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 736px) {
       width: 380px;
       height: 352px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1248px) {
       width: 436px;
       height: 352px;
     }
