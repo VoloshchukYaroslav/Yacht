@@ -3,8 +3,29 @@
   padding-top: 44px;
   border-top: 1px solid rgba(246, 245, 239, 0.2);
 
+  &__content {
+    @media screen and (min-width: 736px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
   &__list {
     margin-top: 40px;
+    @media screen and (min-width: 1248px) {
+      display: flex;
+      gap: 24px;
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 736px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin-top: 0;
+    }
   }
 
   &__item {
@@ -40,8 +61,37 @@
     margin-bottom: 40px;
   }
 
+  &__wraper {
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+
+    @media screen and (min-width: 736px) {
+      gap: 16px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    @media screen and (min-width: 1248px) {
+      margin-top: 132px;
+    }
+
+    @media screen and (min-width: 736px) {
+      margin-top: 100px;
+    }
+  }
+
   &__bucket {
     display: flex;
+    gap: 14px;
+
+    @media screen and (min-width: 736px) {
+      gap: 32px;
+    }
   }
 
   &__unit {
