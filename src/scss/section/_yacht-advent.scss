@@ -93,20 +93,47 @@ width: 185px;
     }
 
 
+
+
+
+
+
+
+
+
+
+
+    &__box{
+        position: relative;
+    }
+
+
     &__roster{
         @media screen and (min-width: 375px){
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        
         }
     }
     
     
+    &__element:nth-child(1) &__box {
+        @media screen and (min-width: 1280px) {
+          margin-left: 373px;
+        }
+      }
+      &__element:nth-child(2) &__box {
+        @media screen and (min-width: 736px) {
+          margin-left: 300px;
+        }
     
-    
-    
-    
-    
+        @media screen and (min-width: 1280px) {
+          margin-right: 32px;
+        }
+    }
+
+     
     
     &__photo{
         width: 335px;
@@ -128,8 +155,6 @@ width: 185px;
     }
     
     
-    
-    
     &__image{
         width: 335px;
     height: 289px;
@@ -141,12 +166,12 @@ width: 185px;
     }
 
     @media screen and (min-width: 1280px){
+        position: absolute;
         margin-top: 407px;
         margin-right: 32px;
+        right: 0;
     }
     }
-    
-    
     
     
     &__img{
@@ -156,6 +181,19 @@ width: 185px;
     }
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
     &__title{
         color: $text-color;
         font-family: "DM Sans";
