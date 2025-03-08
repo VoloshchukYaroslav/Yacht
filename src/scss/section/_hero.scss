@@ -4,13 +4,13 @@
 
 .box {
   display: flex;
-  flex-direction: row; /* Горизонтально при больших экранах */
+  flex-direction: row; 
   justify-content: center;
-  flex-wrap: nowrap; /* Запрещаем перенос при больших экранах */
+  flex-wrap: nowrap; 
 
-  @media screen and (max-width: 1280px) {
-    flex-wrap: wrap; /* Разрешаем перенос при меньших экранах */
-    flex-direction: column; /* Столбцом на мобильных */
+  @media screen and (max-width: 1248px) {
+    flex-wrap: wrap; 
+    flex-direction: column; 
     text-align: unset;
   }
 }  
@@ -21,11 +21,11 @@
 &__main{
   order: 2;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 736px) {
     order: 1;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1248px) {
     order: 1;
   }
 }
@@ -33,11 +33,11 @@
 &__card{
   order: 1;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 736px) {
     order: 2;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1248px) {
     order: 2;
   }
 }
@@ -54,7 +54,7 @@ line-height: 110%;
 letter-spacing: -1.62px;
 margin-top: 40px;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   width: 698px;
 font-size: 60px;
 font-style: normal;
@@ -62,7 +62,7 @@ letter-spacing: -2.7px;
 margin-top: 64px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1248px) {
   margin-top: 132px;
   width: 500px;
 }
@@ -80,7 +80,7 @@ font-weight: 500;
 line-height: 110%;
 letter-spacing: -1.62px;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   font-size: 60px;
   font-style: italic;
   letter-spacing: -2.7px;
@@ -98,7 +98,7 @@ letter-spacing: -1.62px;
     line-height: 140%; /* 19.6px */
     letter-spacing: -0.28px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 736px) {
       margin-top: 16px;
       width: 539px;
       font-size: 16px;
@@ -116,15 +116,15 @@ letter-spacing: -1.62px;
   &__card {
     margin-top: 64px;
     border-radius: 26px;
-    margin-right: 217px;
-    width: 363.327px;
-    height: 465.105px;
+    width: 335px;
+    height: 427px;
     background: url(../img/bodya-imgs/hero-bg.webp) lightgray -105.437px -66.802px / 258.356% 172.321% no-repeat;
 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 736px) {
       width: 426px;
       height: 598px;
+      margin-right: 217px;
     }
   }
 
@@ -163,7 +163,7 @@ text-align: center;
 margin-top: 13px;
 margin-left: 32px;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   margin-top: 11px;
   }
 }
@@ -172,7 +172,7 @@ margin-left: 32px;
 width: 48px;
   height: 48px;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   width: 56px;
   height: 56px;
   }
@@ -182,19 +182,20 @@ width: 48px;
   width: 133px;
   height: 133px;
 border-radius: 24px;
-margin-left: 305px;
+margin-left: 214px;
 transform: translateY(-78px); 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   width: 233px;
   height: 233px;
+  margin-left: 339px;
   }
   }
 
 &__img-yaht{
   position: absolute;
-  width: 378px;
-height: 221px;
+  width: 340px;
+  height: 206px;
   transform: translateY(-140px); 
 }
   
@@ -217,7 +218,7 @@ height: 221px;
   text-transform: uppercase;
   margin-top: 37px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 736px) {
     width: 104px;
     height: 46px;
     }
@@ -235,7 +236,7 @@ height: 221px;
   height: 39px;
   margin-top: 37px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 736px) {
     width: 208px;
     height: 36px;
   }
@@ -263,7 +264,7 @@ height: 221px;
     line-height: 110%; 
     letter-spacing: -0.63px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 736px) {
 font-size: 18px;
 font-style: normal;
 letter-spacing: -0.81px;
