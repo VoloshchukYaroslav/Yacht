@@ -7,15 +7,33 @@
      background-size: cover;
 
 
+
+
     @media screen and (min-width: 768px){
         padding-top: 100px;
         padding-bottom: 100px;
     }
    
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1280px){
         padding-top: 164px;
         padding-bottom: 109px;
     }
+
+
+&__box{
+
+    @media screen and (min-width: 736px){
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1248px){
+        display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+}
+
+
 
 
     &__div{
@@ -24,11 +42,15 @@
     }
 
 
+
+
    
 
 
+
+
     &__title{
-        color: var(--white, #F6F5EF); 
+        color: var(--white, #F6F5EF);
 font-family: "DM Sans";
 font-size: 36px;
 font-style: normal;
@@ -36,6 +58,9 @@ font-weight: 500;
 line-height: 110%; /* 39.6px */
 letter-spacing: -1.62px;
 margin-bottom: 16px;
+
+
+
 
 
 
@@ -51,10 +76,24 @@ margin-bottom: 32px;
 }
 
 
+
+
 @media screen and (min-width: 1200px){
     margin-bottom: 64px;
 }
     }
+
+
+    &__br{
+        display: none;
+
+
+        @media screen and (min-width: 768px){
+            display: block;
+        }
+    }
+
+
 
 
     &__img{
@@ -63,10 +102,14 @@ height: 187px;
 margin-bottom: 40px;
 
 
+
+
 @media screen and (min-width: 768px){
     width: 271px;
 height: 187px;
 }
+
+
 
 
 @media screen and (min-width: 1200px){
@@ -76,6 +119,8 @@ height: 191px;
     }
 
 
+
+
 &__list{
     display: flex;
 flex-direction: column;
@@ -83,15 +128,19 @@ align-items: flex-start;
 gap: 16px;
 
 
+
+
 @media screen and (min-width: 768px){
     gap: 28px;
-    margin-left: 69px;
 }
 
+
 @media screen and (min-width: 1280px){
-    margin-left: 188px;
 }
 }
+
+
+
 
 
 
@@ -103,12 +152,15 @@ gap: 16px;
         font-weight: 500;
         line-height: 120%; /* 16.8px */
         letter-spacing: -0.63px;
-        width: 335px;
+        width: 340px;
 background: transparent;
 border: none;
 border-bottom: 1px solid $text-color;
 outline: none;
 padding-bottom: 16px;
+resize: none;
+
+
 
 
 @media screen and (min-width: 768px){
@@ -122,10 +174,13 @@ letter-spacing: -0.72px;
 width: 364px;
 }
 
+
 @media screen and (min-width: 1200px){
     width: 443px;
 }
     }
+
+
 
 
     &__input::placeholder{
@@ -137,6 +192,7 @@ width: 364px;
         line-height: 120%; /* 16.8px */
         letter-spacing: -0.63px;
 
+
 @media screen and (min-width: 768px){
     color: $text-color;
 font-family: "DM Sans";
@@ -147,6 +203,8 @@ line-height: 120%; /* 19.2px */
 letter-spacing: -0.72px;
 }
 }
+
+
 
 
     &__btn{
@@ -170,14 +228,16 @@ letter-spacing: -0.72px;
             font-size: 18px;
             letter-spacing: -0.81px;
             margin-top: 32px;
-            margin-left: 69px;
+           
         }
+
 
         @media screen and (min-width: 1280px){
             margin-top: 64px;
-            margin-left: 188px;
         }
     }
+
+
 
 
     &__icon{
@@ -186,10 +246,11 @@ letter-spacing: -0.72px;
 height: 8.66px;
     }
 
+
     &__modal{
         border-radius: 20px;
         background-color: $ul-color;
-    width: 335px;
+    width: 80%;
 height: 396px;
 padding-top: 14px;
 padding-bottom: 40px;
@@ -200,6 +261,7 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 @media screen and (min-width: 768px){
     width: 570px;
@@ -213,6 +275,8 @@ padding-right: 32px;
 }
 
 
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -224,6 +288,7 @@ padding-right: 32px;
     opacity: 1;
 }
 
+
 .is-hidden {
     pointer-events: none;
     opacity: 0;
@@ -232,11 +297,19 @@ padding-right: 32px;
 }
 
 
+
+
 .modal{
 &__btn{
     background: transparent;
     border: none;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+
 }
+
 
 &__close{
     width: 20px;
@@ -247,9 +320,12 @@ height: 24px;
 }
 }
 
+
 &__img{
     width: 287px;
 height: 149px;
+
+
 
 
 @media screen and (min-width: 768px){
@@ -257,6 +333,7 @@ height: 149px;
 height: 198px;
 }
 }
+
 
     &__title{
         color: $text-color;
@@ -269,6 +346,7 @@ letter-spacing: -1.08px;
 margin-top: 24px;
 margin-bottom: 14px;
 
+
 @media screen and (min-width: 768px){
 font-size: 32px;
 letter-spacing: -1.44px;
@@ -276,6 +354,7 @@ margin-top: 21px;
 margin-bottom: 16px;
 }
     }
+
 
     &__text{
         color: $text-color;
@@ -287,6 +366,7 @@ line-height: 140%; /* 19.6px */
 letter-spacing: -0.28px;
 width: 287px;
 
+
 @media screen and (min-width: 768px){
 font-size: 16px;
 letter-spacing: -0.32px;
@@ -294,6 +374,21 @@ width: 442px;
 }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -31,11 +31,12 @@ font-style: italic;
 font-weight: 500;
 line-height: 120%; /* 28.8px */
 letter-spacing: -1.08px;
-width: 335px;
+width: 80%;
 margin-bottom: 40px;
 
 @media screen and (min-width: 768px){
     font-size: 32px;
+    font-style: italic;
     letter-spacing: -1.44px;
     width: 514px;
 }
@@ -205,7 +206,7 @@ width: 185px;
         margin-bottom: 64px;
 
         @media screen and (min-width: 768px){
-            font-size: 100px;
+            font-size: 70px;
             letter-spacing: -4.5px;
         }
     }
