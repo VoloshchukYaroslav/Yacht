@@ -77,6 +77,32 @@
   height: 100%;
   background-color: $main-background;
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: -50px;
+    width: 279px;
+    height: 279px;
+    border-radius: 279px;
+    opacity: 0.6;
+    background: #93abae;
+    filter: blur(100px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: 35px;
+    width: 279px;
+    height: 279px;
+    border-radius: 279px;
+    opacity: 0.6;
+    background: #93abae;
+    filter: blur(100px);
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
