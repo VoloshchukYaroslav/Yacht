@@ -3,6 +3,36 @@
   padding-bottom: 164px;
   background: $main-background;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    width: 180px;
+    height: 323px;
+    border-radius: 323px;
+    opacity: 0.6;
+    background: #93abae;
+    filter: blur(100px);
+    z-index: -3;
+
+    @media screen and (max-width: 375px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 736px) {
+      top: 540px;
+      width: 414px;
+      height: 414px;
+      border-radius: 414px;
+      filter: blur(130px);
+    }
+
+    @media screen and (min-width: 1248px) {
+      top: 200px;
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
