@@ -24,6 +24,7 @@
 
     @media screen and (min-width: 736px){
         justify-content: space-between;
+        display: flex;
     }
 
     @media screen and (min-width: 1248px){
@@ -223,11 +224,7 @@ letter-spacing: -0.72px;
 
         &:hover, &:focus {
             border: 1px solid $buttom-color;
-            color:$buttom-color;
-
-            .rent__icon {
-                fill: $buttom-color;
-            }
+            
         }
 
         @media screen and (min-width: 736px){
