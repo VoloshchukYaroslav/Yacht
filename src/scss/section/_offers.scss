@@ -16,7 +16,7 @@
       opacity: 0.6;
       background: #93abae;
       filter: blur(100px);
-      z-index: -3;
+      z-index: 0;
 
       @media screen and (max-width: 375px) {
         width: 100%;
@@ -32,6 +32,7 @@
 
       @media screen and (min-width: 1248px) {
         top: 310px;
+        left: -200px;
       }
     }
   }
