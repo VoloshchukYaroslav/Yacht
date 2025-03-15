@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +30,7 @@
   </head>
   <body>
     <!-- Loads the specified .html file -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
   <div class="container">
     <div class="header__nav">
       <a href="../index.html" class="header__logo">
@@ -319,7 +320,7 @@
   </div>
 </header>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-right">
     <div class="container">
         <ul class="hero__items">
             <li class="hero__item">
@@ -385,7 +386,7 @@
         </ul>
     </div>
 </section>
-    <section class="adventures">
+    <section class="adventures" data-aos="fade-up">
         <div class="container">
     <h3 class="adventures__caption"><span class="adventures__color">Yacht Adventures</span> fleet is here to take you on the ultimate adventure. Each yacht is hand-picked for its comfort, style, and performance.</h3>
     <ul class="adventures__list">
@@ -399,7 +400,7 @@
 </div>
 </section>
 
-    <section class="dreams">
+    <section class="dreams" data-aos="fade-left">
     <div class="container">
         <div class="dreams__box">
     <ul class="dreams__roster">
@@ -439,8 +440,13 @@
 </section>
 
     
-    <section class="offers">
+    
+<section class="offers" data-aos="flip-left">
+  <div class="container">
+=======
+<section class="offers">
   <div class="container box">
+
     <ul class="offers__list">
       <li class="offers__item">
         <div class="offers__box">
@@ -518,7 +524,7 @@
   </div>
 </section>
 
-    <section class="rent">
+    <section class="rent" data-aos="flip-right">
   <div class="container rent__box">
     <div class="rent__div">
     <h1 class="rent__title">Rent a <br class="rent__br">yacht now</h1>
@@ -599,7 +605,7 @@
 
 
     
-    <footer class="footer">
+    <footer class="footer" data-aos="flip-up">
   <div class="container">
     <div class="footer__content">
       <a href="../index.html" class="footer__logo"
@@ -789,5 +795,9 @@
 
     
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
