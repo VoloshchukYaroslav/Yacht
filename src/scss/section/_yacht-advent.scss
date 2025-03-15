@@ -1,5 +1,5 @@
 .adventures {
-    background-color: #11131F;
+    background-color: $main-background;
     padding-top: 80px;
     padding-bottom: 40px;
     
@@ -11,6 +11,7 @@
     
     @media screen and (min-width: 1248px){
         padding-top: 164px;
+        padding-bottom: 64px;
     }
 
     .container {
@@ -40,7 +41,7 @@
     }
 
     &__color{
-        background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+        background: var(--linear-green, linear-gradient(92deg, $gradient1 41.03%, $gradient2 90.31%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -87,7 +88,7 @@ width: 161px;
 @media screen and (min-width: 768px){
     font-size: 16px;
     letter-spacing: -0.32px;
-margin-bottom: 64px;
+
 gap: 32px;
 width: 185px;
 }
