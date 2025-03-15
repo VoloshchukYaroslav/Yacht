@@ -1,22 +1,88 @@
 .dreams{
-    background-color: #11131F;
-    padding-top: 40px;
+    background-color: $main-background;
     padding-bottom: 98px;
 
     @media screen and (min-width: 736px){
-        padding-top: 64px;
         padding-bottom: 100px;
     }
 
     @media screen and (min-width: 1248px){
-        padding-top: 64px;
         padding-bottom: 221px;
     }
 
 
 &__box{
-    position:relative;
+   position: relative;
     z-index: 9;
+    
+    &::before {
+     content: '';
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    width: 255px;
+    height: 255px;
+          border-radius: 323px;
+          opacity: 0.6;
+          background: $buttom-color;
+          filter: blur(100px);
+          z-index: -3;
+    
+          @media screen and (max-width: 375px) {
+            width: 100%;
+          }
+    
+          @media screen and (min-width: 736px) {
+            top: 950px;
+                left: 0;
+                width: 399px;
+                height: 399px;
+                border-radius: 399px;
+          }
+    
+          @media screen and (min-width: 1248px) {
+            top: 600px;
+                left: 200px;
+                width: 414px;
+                height: 414px;
+                border-radius: 414px;
+          }
+        }
+    
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 850px;
+            right: 0px;
+            width: 195px;
+            height: 195px;
+            background: $dream-gardient;
+            opacity: 0.3;
+            filter: blur(100px);
+            z-index: -3;
+            
+            @media screen and (min-width: 375px) {
+                width: 100%;
+            }
+    
+            @media screen and (min-width: 736px) {
+                top: 900px;
+                right: 0px;
+                width: 304px;
+                height: 304px;
+                border-radius: 304px;
+            }
+            
+            @media screen and (min-width: 1248px) {
+                top: 600px;
+                right: 200px;
+                width: 316px;
+                height: 316px;
+                border-radius: 316px;
+            }
+        }
 }
 
 
@@ -49,18 +115,18 @@
     &__element:nth-child(1){
 
         @media screen and (min-width: 1248px){
-            transform: translateX(400px);
+            transform: translateX(372px);
           }
     }
 
     &__element:nth-child(2){
 
         @media screen and (min-width: 1248px){
-            transform: translateX(-100px);
-            z-index: 10;
+            transform: translateY(-165px);
+           
             position: absolute;
             top: 0;
-            left: 0;
+            left: 32px;
           }
     }
 
@@ -70,6 +136,14 @@
         @media screen and (min-width: 736px) {
             transform: translateY(200px);
             z-index: -1;
+          }
+
+          @media screen and (min-width: 1248px){
+            transform: translateY(450px);
+            z-index: -1;
+            position: absolute;
+            left: 372px;
+            top: 12px;
           }
     }
      
@@ -89,7 +163,7 @@
     @media screen and (min-width: 1248px){
         width: 533px;
     height: 473px;
-    margin-top: 64px;
+    
     }
     }
     
@@ -105,10 +179,10 @@
     }
 
     @media screen and (min-width: 1248px){
-        position: absolute;
+        
         margin-top: 407px;
         margin-right: 32px;
-        right: 0;
+      
     }
     }
     
@@ -116,7 +190,9 @@
     &__img{
         width: 260px;
     height: 244px;
-    
+    @media screen and (min-width: 1248px){
+    margin-top: 42px;
+    }
     }
     
 
@@ -155,12 +231,10 @@
             letter-spacing: -4.5px;
             padding-left: 217px;
         padding-right: 181px;
+        margin-top: 50px;
         }
     }
 
-
-        
-        
 
 
 
