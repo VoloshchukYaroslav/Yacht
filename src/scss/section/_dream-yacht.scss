@@ -1,0 +1,171 @@
+.dreams{
+    background-color: #11131F;
+    padding-top: 40px;
+    padding-bottom: 98px;
+
+    @media screen and (min-width: 736px){
+        padding-top: 64px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1248px){
+        padding-top: 64px;
+        padding-bottom: 221px;
+    }
+
+
+&__box{
+    position:relative;
+}
+
+
+    &__roster{
+        @media screen and (min-width: 375px){
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        
+        }
+    }
+    
+    
+    &__element:nth-child(1) &__box {
+        @media screen and (min-width: 1248px){
+          margin-left: 373px;
+        }
+      }
+      &__element:nth-child(2) &__box {
+        @media screen and (min-width: 736px) {
+          margin-left: 300px;
+        }
+    
+        @media screen and (min-width: 1248px){
+          margin-right: 32px;
+        }
+    }
+
+     
+    
+    &__photo{
+        width: 335px;
+    height: 524px;
+    
+    
+    @media screen and (min-width: 736px){
+        width: 704px;
+    height: 631px;
+    margin-bottom: 8px;
+    }
+    
+    
+    @media screen and (min-width: 1248px){
+        width: 533px;
+    height: 473px;
+    margin-top: 64px;
+    }
+    }
+    
+    
+    &__image{
+        width: 335px;
+    height: 289px;
+    
+    
+    @media screen and (min-width: 736px){
+        width: 308px;
+    height: 289px;
+    }
+
+    @media screen and (min-width: 1248px){
+        position: absolute;
+        margin-top: 407px;
+        margin-right: 32px;
+        right: 0;
+    }
+    }
+    
+    
+    &__img{
+        width: 260px;
+    height: 244px;
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    &__title{
+        color: $text-color;
+        font-family: "DM Sans";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 39.6px */
+        letter-spacing: -1.62px;
+        margin-bottom: 64px;
+        width: 100%;
+
+        @media screen and (min-width: 736px){
+            font-size: 70px;
+            letter-spacing: -4.5px;
+            padding-left: 64px;
+        }
+
+        @media screen and (min-width: 1248px) {
+            font-size: 100px;
+            letter-spacing: -4.5px;
+            padding-left: 217px;
+        padding-right: 181px;
+        }
+    }
+
+
+        
+        
+
+
+
+
+    &__btn{
+        color: $text-color;
+        font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 15.4px */
+letter-spacing: -0.63px;
+text-align: center;
+border-radius: 60px;
+border: 1px solid $text-color;
+padding: 14px 28px;
+background: transparent;
+
+&:hover, &:focus {
+    background: transparent;
+    color: $buttom-color;
+    border: 1px solid  $buttom-color;
+}
+
+@media screen and (min-width: 736px){
+    font-size: 18px;
+    letter-spacing: -0.81px;
+    margin-left: 64px;
+}
+
+
+@media screen and (min-width: 1248px){
+    margin-left: 217px;
+}
+    }
+}
